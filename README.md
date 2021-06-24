@@ -19,7 +19,7 @@
 * math
 
 
-## Описание проектово
+## Описание проектов
 ### Анализ продаж видео игр
 Данная работа была аналитического характера. Много работы с pivot_table, query. 
 Так же были выдвинуты гипотезы и проведены статистические тесты (ttest_ind) для проверки равенства средних значений двух выборок.
@@ -73,8 +73,12 @@ else:
 Проект по классификации текстов по признаку токсичности. 
 Основные этапы:
 - очистка текста от лишних символов + лемматизация + удаление стоп-слов
+
+![](https://github.com/ilart/DS_course/blob/main/media/cloud_of_word.png?raw=true)
 - векторизация текста с помощью TfIdf
 - борьба с дизбалансом
+
+![](https://github.com/ilart/DS_course/blob/main/media/setup_threashold.png?raw=true)
 - Тюнинг моделей
 ```
 parametrs = { 'max_depth': range (150, 200, 50)}
@@ -86,4 +90,5 @@ grid = GridSearchCV(model, parametrs, scoring="f1", n_jobs=-1, verbose = 3, cv=3
 grid.fit(train_features, train_target)
 ```
 - обучение различных моделей и сравнение результатов
-![Итоговое сравнение моделей](https://github.com/ilart/DS_course/blob/main/media/models_comparing.png?raw=true)
+
+![](https://github.com/ilart/DS_course/blob/main/media/models_comparing.png?raw=true)
