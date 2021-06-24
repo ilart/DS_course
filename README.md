@@ -49,7 +49,7 @@ else:
 
 ### Выбор наиболее прибыльной скважины
 В данном проекте у нас были пробы нефти в трёх регионах: в каждом 10 000 месторождений, где измерили качество нефти и объём её запасов. Необходимо было построить модель машинного обучения для определения наиболее прибыльного региона. 
-![Anomalies in concentrates of elements]https://github.com/ilart/DS_course/blob/main/media/Density%20of%20elements%20concentrates.png
+![Anomalies in concentrates of elements](https://github.com/ilart/DS_course/blob/main/media/Density%20of%20elements%20concentrates.png)
 
 Здесь я применил Bootstrap. Т.к target значений было мало и данные не были распределены нормально
 ```
@@ -62,11 +62,11 @@ else:
     lower = income_values[i].quantile(q=0.025)
     upper = income_values[i].quantile(q=0.975)
 ```
-![risks of nonprofit investments]https://github.com/ilart/DS_course/blob/main/media/Density%20of%20incomes%20with%20qantiles.png?raw=true
+![risks of nonprofit investments](https://github.com/ilart/DS_course/blob/main/media/Density%20of%20incomes%20with%20qantiles.png?raw=true)
 
 ### Обогащение золота
 В данном проекте необходимо было предсказать коэфициент восстановления золота из руды. Сложный проект тем что надо разобраться в процессе обогащения. Понять суть всех этапов (флотация, несколько стадий фильтрации ), отсеять лишние признаки. А также необходимо было применить кастомную скор-функцию для оценки качества прогноза коэфициента. 
-![heatmap]https://github.com/ilart/DS_course/blob/main/media/gold_recovery_heatmap.png?raw=true
+![heatmap](/blob/main/media/gold_recovery_heatmap.png?raw=true)
 
 
 ### Машинное обучение для текстов
@@ -86,4 +86,4 @@ grid = GridSearchCV(model, parametrs, scoring="f1", n_jobs=-1, verbose = 3, cv=3
 grid.fit(train_features, train_target)
 ```
 - обучение различных моделей и сравнение результатов
-![Итоговое сравнение моделей]https://github.com/ilart/DS_course/blob/main/media/models_comparing.png?raw=true
+![Итоговое сравнение моделей](/main/media/models_comparing.png?raw=true)
