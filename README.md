@@ -66,7 +66,7 @@ else:
 
 ### Обогащение золота
 В данном проекте необходимо было предсказать коэфициент восстановления золота из руды. Сложный проект тем что надо разобраться в процессе обогащения. Понять суть всех этапов (флотация, несколько стадий фильтрации ), отсеять лишние признаки. А также необходимо было применить кастомную скор-функцию для оценки качества прогноза коэфициента. 
-![heatmap](/blob/main/media/gold_recovery_heatmap.png?raw=true)
+![heatmap](https://github.com/ilart/DS_course/blob/main/media/gold_recovery_heatmap.png?raw=true)
 
 
 ### Машинное обучение для текстов
@@ -86,4 +86,4 @@ grid = GridSearchCV(model, parametrs, scoring="f1", n_jobs=-1, verbose = 3, cv=3
 grid.fit(train_features, train_target)
 ```
 - обучение различных моделей и сравнение результатов
-![Итоговое сравнение моделей](/main/media/models_comparing.png?raw=true)
+![Итоговое сравнение моделей](https://github.com/ilart/DS_course/blob/main/media/models_comparing.png?raw=true)
